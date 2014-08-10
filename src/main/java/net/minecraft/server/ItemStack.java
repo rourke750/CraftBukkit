@@ -102,8 +102,6 @@ public final class ItemStack {
         boolean flag = this.getItem().interactWith(this, entityhuman, world, i, j, k, l, f, f1, f2);
         int newData = this.getData();
         int newCount = this.count;
-        this.count = count;
-        this.setData(data);
         world.captureBlockStates = false;
         if (flag && world.captureTreeGeneration && world.capturedBlockStates.size() > 0) {
             world.captureTreeGeneration = false;
